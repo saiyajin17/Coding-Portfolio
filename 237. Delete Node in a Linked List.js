@@ -11,3 +11,11 @@ var deleteNode = function(node) {
     }
     prev.next=null;
 };
+
+/* EASY APPROACH */
+
+var deleteNode = function(node) {
+    
+    node.val=node.next.val;
+    node.next=node.next.next;
+};
